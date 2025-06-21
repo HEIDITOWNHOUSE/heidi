@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <title>속초 하이디 타운하우스</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin:0; font-family: 'Arial', sans-serif; background:#fff; color:#333; }
+    header { background:#f8f8f8; padding:20px 10px; text-align:center; }
+    header h1 { margin:0; font-size:24px; color:#2c3e50; }
+    
+    nav { background:#ffffff; border-top:1px solid #eee; border-bottom:1px solid #eee; }
+    nav ul { display:flex; justify-content:center; flex-wrap:wrap; margin:0; padding:0; list-style:none; }
+    nav li { margin:10px; }
+    nav a { text-decoration:none; color:#333; font-weight:bold; }
+
+    .hero {
+      background:url('https://images.unsplash.com/photo-1560347876-aeef00ee58a1?fit=crop&w=1200&q=80') no-repeat center center/cover;
+      height:300px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .hero h2 {
+      font-size:32px;
+      background:rgba(0,0,0,0.5);
+      padding:10px 20px;
+      border-radius:10px;
+    }
+
+    .section {
+      padding:30px 15px;
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .section h3 {
+      color:#2c3e50;
+      margin-bottom:10px;
+    }
+
+    .gallery {
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .gallery img {
+      width:100%;
+      max-width:280px;
+      border-radius:10px;
+    }
+
+    .buttons a {
+      display:inline-block;
+      background:#007BFF;
+      color:#fff;
+      padding:10px 20px;
+      margin:10px 10px 0 0;
+      border-radius:5px;
+      text-decoration:none;
+    }
+
+    iframe {
+      width:100%;
+      height:300px;
+      border:0;
+      border-radius:10px;
+    }
+
+    footer {
+      text-align:center;
+      background:#f1f1f1;
+      padding:20px;
+      font-size:12px;
+      color:#666;
+    }
+  </style>
 </head>
 <body>
+
+<header>
   <h1>속초 하이디 타운하우스</h1>
-  <p>속초IC와 가까운 신축 펜션입니다. 편안한 휴식을 즐겨보세요!</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">소개</a></li>
+    <li><a href="#rooms">객실사진</a></li>
+    <li><a href="#info">비품안내</a></li>
+    <li><a href="#map">오시는길</a></li>
+    <li><a href="tel:010-1234-5678">📞 문의전화</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <h2>자연과 함께하는 편안한 휴식</h2>
+</div>
+
+<section id="about" class="section">
+  <h3>숙소 소개</h3>
+  <p>
+    속초IC 인근의 신축 펜션으로, 프라이빗한 공간과 청결한 객실을 제공합니다. <br>
+    주변 관광지로는 델피노 키즈파크, 척산온천, 한화 워터피아 등이 있습니다.
+  </p>
+</section>
+
+<section id="rooms" class="section">
+  <h3>객실 미리보기</h3>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?fit=crop&w=800&q=80" alt="외부">
+    <img src="https://images.unsplash.com/photo-1600585154515-cb4c4d1d1d31?fit=crop&w=800&q=80" alt="침실">
+    <img src="https://images.unsplash.com/photo-1598928506311-58c1f93849b4?fit=crop&w=800&q=80" alt="거실">
+  </div>
+</section>
+
+<section id="info" class="section">
+  <h3>비품 안내</h3>
+  <ul>
+    <li>Wi-Fi / 에어컨 / TV</li>
+    <li>냉장고 / 전자레인지 / 전기포트</li>
+    <li>식기류 / 취사도구 완비</li>
+    <li>샴푸, 린스, 바디워시 / 타월 제공</li>
+  </ul>
+</section>
+
+<section id="map" class="section">
+  <h3>오시는 길</h3>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.8483998316927!2d128.591813415245!3d38.204208679683556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fcd891b6c6c257f%3A0x3b14ef41a1b678f6!2z7ISc7Jq47Yq567OE7IucIOq1rOuhnOyLnCDspJHtmZTrj4Trj5kg67O06riw!5e0!3m2!1sko!2skr!4v1700000000000"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</section>
+
+<section class="section buttons">
+  <a href="tel:010-1234-5678">📞 전화 문의하기</a>
+  <a href="https://open.kakao.com/o/yourlink">💬 카카오톡 문의</a>
+</section>
+
+<footer>
+  ⓒ 속초 하이디 타운하우스<br>
+  이 페이지는 GitHub Pages를 통해 무료로 제작되었습니다.
+</footer>
+
 </body>
 </html>
